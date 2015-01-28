@@ -1,0 +1,19 @@
+{
+    "name": "teleduino/php-teleduino2560-client",
+    "type": "library",
+    "description": "PHP Teleduino Client for interacting with your Teleduino2560 device.",
+    "keywords": ["teleduino", "teleduino328", "arduino", "iot"],
+    "homepage": "https://github.com/teleduino/php-teleduino2560-client/",
+    "authors": [
+        {
+            "name": "Nathan Kennedy"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {"Teleduino\\Teleduino2560Client\\": "src/"}
+    }
+}

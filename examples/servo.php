@@ -1,21 +1,18 @@
 <?php
 /*
-  servo.php - Teleduino2560 PHP servo example
-  Version 0.1.2
-  Nathan Kennedy 2009 - 2014
-  http://www.teleduino.org
+ * https://www.teleduino.org
+ *
+ * This code is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ */
 
-  This code is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-*/
+include_once(__DIR__.'/_bootstrap.php');
 
-include_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'_config.php');
-include_once(dirname(dirname(__FILE__)).DIRECTORY_SEPARATOR.'teleduino2560.php');
+use Teleduino\Teleduino2560Client\Client as Teleduino2560;
 
-if(isset($_SERVER['HTTP_HOST']))
-{
-	echo "<pre>";
+if(isset($_SERVER['HTTP_HOST'])) {
+    echo "<pre>";
 }
 
 $Teleduino2560 = new Teleduino2560();
@@ -45,5 +42,3 @@ $servo = 0; // Servo (0 - 47)
 $result = $Teleduino2560->getServo($servo);
 echo print_r($result, true)."\n";
 */
-
-?>
